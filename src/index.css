@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gradient-to-br from-slate-900 via-purple-900/30 to-slate-900;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/10 backdrop-blur-xl border border-white/20;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent;
+  }
+}
